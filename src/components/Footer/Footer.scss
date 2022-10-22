@@ -1,0 +1,32 @@
+.footer{
+    padding: 3rem;
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    background-color: #fafafa;
+
+    @media screen and (min-width: 1024px){
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    a{
+        color: black;
+    }
+
+    p{
+        font-size: 1.2rem;
+        letter-spacing: .5rem;
+        padding: 4rem 0;
+    }
+
+    .social span{
+        padding: 0 1rem;
+
+        svg{
+            font-size: 2rem;
+        }
+    }
+}

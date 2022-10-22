@@ -1,0 +1,132 @@
+.app__skills-container{
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 900px) {
+        flex-direction: row;
+
+      }
+
+    .app__skills-list{
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+
+        @media screen and (min-width: 900px) {
+            margin: 0 8rem 0 7rem;
+    
+        }
+
+        @media screen and (max-width: 900px) {
+            margin-right: 0;
+            justify-content: center;
+            align-items: center;
+          }
+
+        .app__skills-item{
+            flex-direction: column;
+            margin: 1.5rem;
+            transition: all 0.3s ease-in-out;
+
+            div{
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                border: 1px solid var(--lightGray-color);
+                background-color: var(--white-color) !important; 
+
+                img{
+                    width: 50%;
+                    height: 50%;
+                    object-fit: cover;
+                }
+
+                &:hover{
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                }
+            }
+
+            p{
+                margin-top: 0.5rem;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .app__skills-experience{
+        display: flex;
+        justify-content: flex-start;
+        flex: 1;
+        flex-direction: column;
+        margin-top: 5rem;
+
+        .app__skills-exp-item{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: 1rem 0;
+
+            .app__skills-exp-year{
+                margin-right: 3rem;
+
+                p{
+                    font-weight: 800;
+                    color: var(--secondary-color);
+                  
+                }
+            }
+
+            .app__skills-exp-works{
+                flex: 1;
+
+                .app__skills-exp-work{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    margin-bottom: 1rem;
+                    cursor: pointer;
+
+                    h4 {
+                        font-weight: 500;
+                      }
+                  
+                      p {
+                        font-weight: 400;
+                        color: var(--gray-color);
+                        margin-top: 5px;
+                        font-size: 14px;
+                      }
+                }
+
+                .skills-tooltip{
+                    font-size: 17px !important;
+                    max-width: 400px !important;
+                    background-color: var(--white-color)
+                    !important;
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important ;
+                    border-radius: 5px !important;
+                    padding: 1rem !important;
+                    color: var(--gray-color) !important;
+                    text-align: center !important;
+                    line-height: 1.5 !important;
+                    opacity: 1 !important;
+                }
+            }
+            
+        }
+
+
+
+    }
+    
+}

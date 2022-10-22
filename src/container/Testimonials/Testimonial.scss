@@ -1,0 +1,114 @@
+.app__testimonial-item{
+    margin: 12rem auto 4rem;
+    width: 60%;
+    min-height: 400px;
+    background-color: var(  --light-gray-color);
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: all 0.5s ease-in-out;
+
+    .client-img{
+      width: 230px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h4 {
+            font-weight: 600;
+            color: var(--secondary-color);
+            margin-top: 2rem;
+          }
+        
+          h5 {
+            font-weight: 400;
+            color: var(--gray-color);
+            margin-top: 5px;
+          }
+            
+    }
+
+    .p-text{
+        color: var(--black-color) !important;
+    }
+
+    img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+      @media screen and (max-width: 900px) {
+        width: 90%;
+    }
+    
+    @media screen and (max-width: 1200px) {
+        height: 850px;
+        flex-direction: column;
+      }
+    
+      .app__testimonial-content{
+        flex: 1;
+        height: 100%;
+        padding: 0 2rem 0 4rem;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        // min-width: 250PX;
+
+
+        p {
+            font-size: 1rem;
+            line-height: 2rem;
+          }
+
+                  
+      }
+
+      
+
+}
+
+.app__testimonial-btns {
+    margin-top: 1rem;
+  
+    div {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: var(--light-gray-color);
+      border: 1px solid var(--light-gray-color);
+  
+      margin: 1rem;
+      transition: all 0.3s ease-in-out;
+  
+      svg {
+        width: 20px;
+        height: 20px;
+        color: var(--secondary-color);
+      }
+  
+      &:hover {
+        background-color: var(--secondary-color);
+  
+        svg {
+          color: var(--white-color);
+        }
+      }
+  
+      @media screen and (min-width: 2000px) {
+        width: 100px;
+        height: 100px;
+  
+        svg {
+          width: 45px;
+          height: 45px;
+        }
+      }
+    }
+  }

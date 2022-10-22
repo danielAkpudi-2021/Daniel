@@ -1,0 +1,98 @@
+.contact__form-container {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 1100px) {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .admin-contact-card{
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        padding: 1rem 0;
+
+        .p-text{
+            font-size: 1rem; 
+            padding: 0 1rem;
+            color: var(--secondary-color);
+
+            text-decoration: none;
+        
+        }
+    }
+
+    .client__contact-details{
+        margin: 3rem 0;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 3rem 1rem;
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+
+        @media screen and (min-width: 980px) {
+            width: 700px;
+
+            .line{
+                display: flex;
+                justify-content: space-between;
+            }
+        }     
+        
+        input {
+            width: 100%;
+
+            @media screen and (min-width: 980px) {
+                width: inherit;
+            }
+        }
+
+        input,
+        textarea,
+        button{
+            padding: 1.2rem;
+            margin: 1.2rem 0;
+            border-radius: 10px;
+            outline: none;
+            font-size: 18px;
+            border: 1px solid var(--lightGray-color);
+            
+            &::placeholder {
+                color: var(--gray-color);
+            }
+        }
+
+        .send-button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            button{
+                display: flex;
+                align-items: center;
+                padding: 1rem 2rem;
+                background-color: var(--secondary-color);
+                color: var(--white-color);
+                cursor: pointer;
+                transition: all 0.5s ease-in-out;
+    
+                &:hover{
+                    background-color: var(--gray-color);
+                }
+    
+                svg{
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+
+}
+
+// .contact__form-container{
+//     display: flex;
+// }
