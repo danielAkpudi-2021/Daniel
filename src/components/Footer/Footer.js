@@ -1,5 +1,5 @@
 import React from 'react'
-import { AiOutlineTwitter, AiFillGithub, AiOutlineInstagram, AiOutlineFacebook
+import { AiOutlineTwitter, AiFillGithub, AiOutlineInstagram, AiOutlineFacebook, AiOutlineWhatsApp
 } from 'react-icons/ai';
 
 import './Footer.scss'
@@ -16,6 +16,7 @@ const Footer = () => {
            <a href='https://github.com/danielAkpudi-2021' target='_blank'><span><AiFillGithub /></span></a>
             <a href=''><span><AiOutlineInstagram /></span></a>
             <a href=''><span><AiOutlineFacebook /></span></a>
+            <a href=''><span><AiOutlineWhatsApp /></span></a>
         </div>
     </div>
   )

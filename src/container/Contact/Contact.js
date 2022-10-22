@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { AiOutlineMobile, AiOutlineMail  } from 'react-icons/ai';
+import { AiOutlineMobile, AiOutlineMail } from 'react-icons/ai';
 import { RiSendPlaneLine  } from 'react-icons/ri';
 import toast, { Toaster } from "react-hot-toast";
 
